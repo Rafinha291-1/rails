@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+ .authorbox{
+    border: 4mm ridge;
+    border-color: rgb(255, 98, 80);
+    width: 280px;
+    height: 230px;
+    background-color: rgb(70, 11, 4);
+ }
+ .bookbox{
+    border: 4mm ridge;
+    border-color: coral;
+    width: 280px;
+    height: 230px;
+ }
+ .groundbreak{
+    background-color:rgb(52, 29, 21);
+ }

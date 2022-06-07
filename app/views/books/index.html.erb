@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Books</h1>
-
+<h1>Books</h1> <%= link_to "New book", new_book_path %>
+<%= link_to "All authors", authors_path %>
 <div id="books">
   <% @books.each do |book| %>
     <%= render book %>
@@ -10,5 +10,3 @@
     </p>
   <% end %>
 </div>
-
-<%= link_to "New book", new_book_path %>

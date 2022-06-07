@@ -1,17 +1,19 @@
 <div id="<%= dom_id book %>">
-  <p>
-    <strong>Title:</strong>
-    <%= book.title %>
-  </p>
+  <div class="bookbox">
+    <p>
+      <strong>Title:</strong>
+      <%= book.title %>
+    </p>
 
-  <p>
-    <strong>Pages:</strong>
-    <%= book.pages %>
-  </p>
+    <p>
+      <strong>Pages:</strong>
+      <%= book.pages %>
+    </p>
 
-  <p>
-    <strong>Author:</strong>
-    <%= book.author.name %>
-  </p>
-
+    <p>
+      <strong>Author:</strong>
+      <%= book.author.name %>
+    </p>
+  </div>
+  <%= link_to "This author", book.author %>
 </div>
