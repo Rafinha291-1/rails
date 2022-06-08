@@ -1,17 +1,20 @@
-<p style="color: green"><%= notice %></p>
+<div class="aut">
+  <p style="color: green"><%= notice %></p>
 
-<h1>Authors</h1>
+  <h1>Authors</h1>
 
-<div id="authors">
-  <% @authors.each do |author| %>
-    <%= render author %>
-    <p>
-      <%= link_to "Show this author", author %>
-    </p>
-  <% end %>
+  <div id="authors">
+    <% @authors.each do |author| %>
+      <%= render author %>
+      <p>
+        <%= link_to "Show this author", author %>
+      </p>
+    <% end %>
+  </div>
+  <div class = "link">
+    <strong> <%= link_to "All books", books_path%> </strong>
+  </div>
+
+  <%= link_to "New author", new_author_path %>
 </div>
-<div class = "link">
-  <strong> <%= link_to "All books", books_path%> </strong>
-</div>
-
-<%= link_to "New author", new_author_path %>
+<%= link_to "Homepage", root_path%>

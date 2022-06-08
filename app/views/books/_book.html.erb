@@ -14,6 +14,7 @@
       <strong>Author:</strong>
       <%= book.author.name %>
     </p>
+    <%= button_to "Destroy this book", @book, method: :delete %>
   </div>
   <%= link_to "This author", book.author %>
 </div>
