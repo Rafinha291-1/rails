@@ -8,7 +8,7 @@
 <%= link_to "New book", new_book_path %>  
 
 <%= link_to "All authors", authors_path %>
-<div id="books">
+<div id="books" class="books1">
   <% @books.each do |book| %>
     <%= render book %>
     <p>
