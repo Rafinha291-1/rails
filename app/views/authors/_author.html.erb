@@ -8,7 +8,7 @@
       <strong>Books: </strong>
       <ul>
         <% author.books.each do |book| %>
-          <li><%= book.title %> <%= link_to "(See)", book_path(book) %></li>
+          <li><%= book.title %> <%= link_to "(See!)", book_path(book) %></li>
         <% end %>
       </ul>
     </p>
