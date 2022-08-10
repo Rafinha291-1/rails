@@ -19,7 +19,6 @@ class BooksController < ApplicationController
   def search
     @books = Book.where("title LIKE ?", "%" + params[:q] + "%")
   end
-
   # GET /books/1/edit
   def edit
     @authors = Author.all

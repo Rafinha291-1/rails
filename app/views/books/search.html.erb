@@ -1,6 +1,12 @@
 <h1>Search results</h1>
 <%=render @books%>
-
+    <% if (@books) %>
+        <% if (@books.empty?) %>
+            <p>No results found.</p>
+        <% else %>
+            <%=render @books%>
+        <% end %>
+    <% end %>
 <%=link_to "Homepage", homepage_index_path%>
 
 
