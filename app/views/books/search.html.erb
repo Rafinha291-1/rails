@@ -3,6 +3,7 @@
         <% if (@books.empty?) %>
             <p>No results found.</p>
         <% else %>
+            <span> <%= @books.count %> results found! </span>
             <%=render @books%>
         <% end %>
     <% end %>
